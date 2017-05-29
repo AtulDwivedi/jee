@@ -1,2 +1,2 @@
-# jee-001
-Java Enterprise Edition 001
+# jee
+Java Enterprise Edition

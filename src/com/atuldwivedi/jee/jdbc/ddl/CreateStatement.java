@@ -23,7 +23,7 @@ public class CreateStatement {
 		Statement stmt = null;
 		ResultSet rs = null;
 
-		String createJdbcSchema = "CREATE SCHEMA IF NOT EXISTS LEARN_JDBC)";
+		String createJdbcSchema = "CREATE SCHEMA IF NOT EXISTS LEARN_JDBC";
 		String createLoginTable = "CREATE TABLE LEARN_JDBC.LOGIN (USERNAME VARCHAR2, PASSWORD VARCHAR2)";
 
 		int rowUpdatedRowCount = 0;
@@ -33,12 +33,13 @@ public class CreateStatement {
 			stmt = con.createStatement();
 
 			rowUpdatedRowCount = stmt.executeUpdate(createJdbcSchema);
-
-			if (rowUpdatedRowCount >= 0) {
+			System.out.println(rowUpdatedRowCount);
+			
+			if (rowUpdatedRowCount == 0) {
 				System.out.println("Schema created successfully.");
 				rowUpdatedRowCount = stmt.executeUpdate(createLoginTable);
 
-				if (rowUpdatedRowCount >= 0) {
+				if (rowUpdatedRowCount == 0) {
 					System.out.println("Table created successfully.");
 				} else {
 					System.out.println("Table creation failed.");

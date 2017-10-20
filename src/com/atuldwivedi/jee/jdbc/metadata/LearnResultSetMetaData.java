@@ -1,4 +1,4 @@
-package com.atuldwivedi.jee.jdbc.basic;
+package com.atuldwivedi.jee.jdbc.metadata;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

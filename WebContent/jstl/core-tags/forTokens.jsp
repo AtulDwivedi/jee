@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body> 
-<c:forTokens items="Dheeraj,Santhi,Sreenath" delims="," var="name">  
+<c:forTokens items="Atul,Martin,Rod" delims="," var="name">  
    <c:out value="${name}"/><br>  
 </c:forTokens>
 </body>  

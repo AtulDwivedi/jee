@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-    <%@ page isELIgnored="false" %>
+	pageEncoding="ISO-8859-1"%>
+<%@ page isELIgnored="false"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,18 +9,15 @@
 </head>
 <body>
 
-Page ID: ${param.pageId}
+	Page ID: ${param.pageId}
 
-<br>
+	<br> Name: ${param.name}
 
-Name: ${param.name}
+	<br>
+	<!-- Only first checkbox's value will be printed  -->
+	First Course: ${param.course}
 
-<br>
-<!-- Only first checkbox's value will be printed  -->
-First Course: ${param.course}
-
-<br>
-
-All Courses: ${paramValues.course[0]} &nbsp; ${paramValues.course[1]}
+	<br> All Courses: ${paramValues.course[0]} &nbsp;
+	${paramValues.course[1]}
 </body>
 </html>

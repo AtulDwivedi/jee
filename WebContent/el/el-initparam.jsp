@@ -5,15 +5,13 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>EL - Cookies</title>
+<title>EL - initParam</title>
 </head>
 <body>
-	<h1>Fetch Cookies without using EL</h1>
-	
-	
+		
 	<hr>
 
-	<h1>Fetch Cookies using EL</h1>
+	<h1>Fetch initParam using EL</h1>
 	<br> ${initParam.institute}
 </body>
 </html>

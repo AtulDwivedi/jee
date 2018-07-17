@@ -10,7 +10,7 @@
 <body> 
 <c:set var="userName" scope="session" value="atuldwivedi" />
 <c:if test="${userName eq 'atuldwivedi'}"> 
-<c:out value="${userName}"/>  
+<c:out value="${userName}"/> 	 
 </c:if> 
 </body>  
 </html>

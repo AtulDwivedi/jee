@@ -8,6 +8,7 @@
 <title>Out tag</title>
 </head>
 <body>
+${'Welcome'}
 <c:out value="${'Welcome'}" />
 </body>
 </html>
